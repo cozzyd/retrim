@@ -238,6 +238,7 @@ while(buf[0] == '>')
   }
 
   printf("Read %d tracks with E = %f\n",tracks.size(), E);  
+  fclose(collfile); 
   return  0; 
 
 }
