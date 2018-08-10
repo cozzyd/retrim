@@ -100,6 +100,7 @@ int retrim::HistogramReader::readPHONON(const char * file, TH1F ** ion, TH1F** r
      (*ion)->SetBinContent(i,si*1e4); 
      (*recoil)->SetBinContent(i,sr*1e4); 
    }
+   fclose(f);
 }
 
 
@@ -164,7 +165,7 @@ int retrim::HistogramReader::readIONIZ(const char * file, TH1F ** ion, TH1F** re
      (*recoil)->SetBinContent(i,sr*1e4); 
    }
 
-
+   fclose(f);
 
 
 }

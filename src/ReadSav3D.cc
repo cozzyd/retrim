@@ -46,6 +46,8 @@ TH2D * retrim::readSav3D(const char * file, double binwidth,  const char * name)
   hist->GetYaxis()->SetTitle("lateral (um)"); 
   hist->GetZaxis()->SetTitle("ioniz (keV)"); 
 
+  fclose(fptr);
+
   return hist; 
 }
 
